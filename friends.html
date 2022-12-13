@@ -1,0 +1,223 @@
+<html lang=en>
+<head>
+<title>My Friends</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: center;
+  color:#FFF
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  text-align: center;
+  color: white;
+}
+
+ table, td{
+ border:1px solid;
+ height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ table{
+ width:70%
+
+ }
+
+  .button {
+  background-color: red; 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.button {border-radius: 100px;}
+ 
+ #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+ 
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: violet;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: red;
+  color: black;
+}
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.side {
+  -ms-flex: 30%; 
+  flex: 20%;
+  background-color:black;
+  padding: 20px;
+}
+
+.main {   
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: lightpink;
+  padding: 20px;
+}
+
+  div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+
+</style>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<div class="header">
+  <img src="images/header2.jpg" width="100%">
+</div>
+
+<div class="navbar">
+<b><a style="font-family:Lucida Fax" href="aboutme.html">Home</a></b>
+<b><a style="font-family:Lucida Fax" href="index.html">My Profile</a></b>
+<b><a style="font-family:Lucida Fax" href="education.html">Education</a></b>
+<b><a style="font-family:Lucida Fax" href="hobby.html">Hobby</a></b>
+<b><a style="font-family:Lucida Fax" href="photo.html">Photos</a></b>
+<b><a style="font-family:Lucida Fax" href="favoriteholiday.html">Favorite Holiday</a></b>
+<b><a style="font-family:Lucida Fax" href="family.html">My Family</a></b>
+<b><a style="font-family:Lucida Fax" href="friends.html">My Friends</a></b>
+</div>
+  
+  <div class="main">
+    <h2 style="color:black; font-family:Lucida Sans">SITI SARAH BINTI CHE HASAN</h2>
+  <marquee><h2>&#10024;Hello there! I'm a Information Management Student. This is my website.&#10024;</h2></marquee>
+<br>
+ <h2 style="color:black; font-family:Lucida Sans" id="friends">My Friend</h2>
+    <p></p>
+<div style="text-align:center"> 
+<video width="800" height="600" controls>
+  <source src="video/ghostship.mov" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<br>
+<p style="color:black"align="justify">In primary school, I used to have six close friends but then we were separated due to different high schools. Only two of them were in the same high school as me but unfortunately, our friendship did not close anymore because of a different class. We start to have our own paths and find new friends. Since that day, I am close to Azlia, the twins, Wardina, Anis, Duha, Syifa and Najwa. We name our gang as Ghostship. We are the Conventarians, so we have zero boy students. We creates our beautiful, wonderful, joyful, and dark moments together in high school a lot. We enjoyed so much our high school. After finishing SPM, Anis, The Twins and I pursue our studies in STPM at Kolej Tingkatan Enam Sultan Sallehuddin. The others make a decision to take a diploma. I miss my gang right now. There are no friend that could be the same as them.</p>
+
+ <h2 style="background-color:tomato;text-align:center" id="photos">My Friends Photo</h2>
+  <div class="column">
+    <p style="color:black; font-family:Lucida Sans">This is my classmates in highschool</p>
+    <img src="images/friend6.jpg" style="width:100%">
+  </div>
+
+  <div class="column">
+  <p style="color:black; font-family:Lucida Sans">This is my classmates in form 6</p>
+    <img src="images/friend4.jpg" style="width:100%">
+  </div>
+
+  <div class="column">
+   <p style="color:black; font-family:Lucida Sans">This is my friends in degree</p>
+    <img src="images/friend7.jpg" style="width:100%">
+  </div>
+
+<br>
+<br>
+<br>
+</div>
+
+
+<div class="footer">
+<br> <a href="aboutme.html">Cover Page |<a href="index.html">My Profile |<a href="education.html"> Education |<a href="hobby.html"> Hobby |<a href="photo.html"> Photos |<a href="favoriteholiday.html"> Favorite Holiday |<a href="family.html"> My Family|<a href="friends.html"> My Friends </a>
+</br>
+<p style=color:purple;> © Sarah </p>
+<p style=color:blue;>Prepared for Sir Mohd Firdaus Bin Mohd Helmi</p>
+</div>
+</div>
+</body>
+</html>

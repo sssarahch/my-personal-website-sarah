@@ -1,0 +1,239 @@
+<html lang=en>
+<head>
+<title>Hobby</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: center;
+  color:#FFF
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  text-align: center;
+  color: white;
+}
+
+ table, td{
+ border:1px solid;
+ height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ table{
+ width:70%
+
+ }
+
+  .button {
+  background-color: red; 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.button {border-radius: 100px;}
+ 
+ #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+ 
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: pink;
+}
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.side {
+  -ms-flex: 30%; 
+  flex: 20%;
+  background-color: maroon;
+  padding: 20px;
+}
+
+.main {   
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: black;
+  padding: 20px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: darkblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+  div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+</style>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<div class="header">
+  <img src="images/header.jpg" width="100%">
+</div>
+
+<div class="navbar">
+<b><a style="font-family:Lucida Fax" href="aboutme.html">Home</a></b>
+<b><a style="font-family:Lucida Fax" href="index.html">My Profile</a></b>
+<b><a style="font-family:Lucida Fax" href="education.html">Education</a></b>
+<b><a style="font-family:Lucida Fax" href="hobby.html">Hobby</a></b>
+<b><a style="font-family:Lucida Fax" href="photo.html">Photos</a></b>
+<b><a style="font-family:Lucida Fax" href="favoriteholiday.html">Favorite Holiday</a></b>
+<b><a style="font-family:Lucida Fax" href="family.html">My Family</a></b>
+<b><a style="font-family:Lucida Fax" href="friends.html">My Friends</a></b>
+</div>
+  
+<div class="row">
+  <div class="side">
+   <h2>SARAH</h2>
+   <img src="images/caah2.jpg" width="90%">
+<br>
+<audio controls>
+  <source src="audio/neyo.mp3" type="audio/mpeg">
+  </audio>
+  <br>
+  <br>
+  <br>
+ <a href="https://www.instagram.com/sssarahch/" target="_blank"><i class="fa fa-instagram"> Instagram</i></a>
+  </div>
+  
+  <div class="main">
+    <h2>SITI SARAH BINTI CHE HASAN</h2>
+  <marquee><h2>&#10024;Hello there! I'm a Information Management Student. This is my website.&#10024;</h2></marquee>
+<br>
+ <h2 id="hobby">Hobby</h2>
+<p align="justify">I enjoys scrolling through my social media accounts, such as Twitter, Instagram, and TikTok, during my free time. Since I loves cats so much, TikTok is the app I uses to chill since it offers amusing and adorable videos of cats. For me, Twitter serves as both a morning newspaper and a bedtime story. There are many different types of news, including political, current affairs, and others.</p>
+<p align="justify">Secondly, I likes watching Kdrama. My first Kdrama in 2012 after being persuaded by my sister to watch Full House and My Girl, two very popular Kdramas at the moment. But I also enjoys reading novels. My father also encourages me to read, and I have many novels in my room. As a result, I was able to write a paper in Bahasa Melayu and receive an A in UPSR.</p>
+<p align="justify">I starts playing a game called Player Unknown Battlegrounds  (PUBG) after finishing SPM in 2018. Playing it ever since with my sister and my friend. Since that day I have made a lot of internet friends.  I will play it every night from dusk till dawn while the movement control order (MCO) is in effect in March 2020. I managed to obtain a decent result despite the fact that I was in STPM's second semester. I have stopped playing mobile games since I am too busy with my education, assignments, SUKSIS, and doing part time job.</p>
+<br>
+<br>
+<br>
+<br>
+</div>
+</div>
+
+
+<div class="footer">
+<br> <a href="aboutme.html">Cover Page |<a href="index.html">My Profile |<a href="education.html"> Education |<a href="hobby.html"> Hobby |<a href="photo.html"> Photos |<a href="favoriteholiday.html"> Favorite Holiday |<a href="family.html"> My Family|<a href="friends.html"> My Friends </a>
+</br>
+<p style=color:purple;> © Sarah </p>
+<p style=color:blue;>Prepared for Sir Mohd Firdaus Bin Mohd Helmi</p>
+</div>
+</div>
+</body>
+</html>
